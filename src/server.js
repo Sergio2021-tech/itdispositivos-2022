@@ -10,7 +10,6 @@ const morgan = require('morgan');
 const app = express();
 require('./database');
 require('./passport/local-auth');
-
 app.use(express.static(path.join(__dirname, 'public')))
 
 
