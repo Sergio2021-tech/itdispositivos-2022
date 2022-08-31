@@ -51,7 +51,6 @@ app.use('/', require('./routes/index'));
 app.listen(app.get('port'), () => {
   console.log('server on port', app.get('port'));
 });
-
 app.use('/images', express.static('images'));
 app.use('/html', express.static('html'));
 app.use('/fonts', express.static('fonts'));
